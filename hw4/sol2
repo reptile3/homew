@@ -1,0 +1,17 @@
+"""
+Ввести с клавиатуры строку, проверить является ли строка палиндромом и вывести результат (yes/no) на экран. Палиндром - это слово или фраза, которые одинаково читаются слева направо и справа налево
+"""
+polindrom = True
+
+stroka = str(input("Enter strk: "))
+
+stroka = list(stroka)
+
+for x in range (0, len(stroka)):
+    if stroka[x] != stroka[x*(-1)-1]:
+        polindrom = False
+      
+if polindrom == True:
+    print("yes")
+else:
+    print("no")
